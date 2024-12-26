@@ -1,0 +1,50 @@
+nav {
+    border-bottom:black solid 1px;
+    padding:10px;
+}
+
+.nav_tab {
+    text-decoration: none;
+    font-size: x-large;
+    font-color:blue;
+    padding:10px;
+    }
+.nav_logo {
+    color:green;
+}
+h1 {
+    color:aqua;
+}
+
+.banner {
+    margin-right: 0px;
+    background-image: url("assets/banner_img.jpg");
+    height: 800px;
+    width: 800px;
+    padding-left: 20px;
+}
+.banner_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+}
+
+.box {
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.details {
+    background-color: #36454F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+body {
+    margin: 0px;
+}
