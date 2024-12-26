@@ -33,21 +33,95 @@
                     <h2>PeTA Certified!</h2>
                 </div>
             </div>
-            <div class="about_us">
-
-
-            </div>
-            <div class="donate">
-
-
-            </div>
-            <div class="contact_us">
-                
+            <div class="about_us title" >
+                <h1>About us:</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio in delectus vero, laborum blanditiis excepturi placeat harum! Earum odit voluptates magnam, quibusdam numquam illo repellat debitis amet porro accusantium!
+                Velit doloremque unde, perferendis repellat veniam fugit, nemo ad modi aperiam reprehenderit libero, eaque praesentium tenetur molestiae maxime alias cumque tempora exercitationem iste deleniti. Sint ullam excepturi dolorem ipsum similique.
+                Eligendi aliquam ea autem quas ratione laborum inventore sint at. Sapiente, voluptatibus quo. Natus veniam, fugiat itaque illo possimus vero eveniet dolor dolores deleniti dolorum. Corrupti ex cupiditate totam non!
+                </h2>
 
             </div>
-            <footer>
+            <hr>
+            <div class="donate title">
+                <h1>Make a donation:</h1>
+                <h2>
+                    You can donate as low as $1 ! 
+                </h2>
+                <h3>Choose donation amount : </h3>
+                <div class="slidecontainer" style="display: flex; flex-direction: row;justify-content: space-evenly;height: 40px;">
+                    <input type="range" min="1" max="100" value = "10" id="donation_slider" style="width: 1000px;">
+                    <h3 style="font-size: larger;">$<span id="slider_value">0</span> <span id="slider_package">Feed a dog!</span></h3>
+                </div>
+            </div>
+            <div class="contact_us title">
+                <h1>Know more about us:</h1>
+                <form action="">
+                    <table style="width: 100%; border-spacing: 5px;">
+                        <tr>
+                            <td style="width: 20%; text-align: right;"><label for="name"><h3>Name:</h3></label></td>
+                            <td style="width: 80%;"><input type="text" id="name" name="name" style="width: 95%;height: 30px;" placeholder="Enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;"><label for="phone"><h3>Phone Number:</h3></label></td>
+                            <td><input type="text" id="phone" name="phone" style="width: 95%;height: 30px;" placeholder="Enter your Phone number"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;"><label for="country"><h3>Country:</h3></label></td>
+                            <td><input type="text" id="country" name="country" style="width: 95%;height: 30px;" placeholder="Enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right; vertical-align: top;"><label for="message"><h3>Message:</h3></label></td>
+                            <td><textarea id="message" name="message" rows="4" style="width: 95%;height: 100px;" placeholder="Enter your request"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align: center;">
 
+                                <input type="Submit" >
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <footer >
+                <div class="column">
+                    <h3>Organisation</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Join Us!</li>
+                        <li>Privacy Policy</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+        
+                <div class="column">
+                    <h3>Non-profit</h3>
+                    <p>Peta approved charity</p>
+                    <p>License number:2132113</p>
+                    Operated by volunteers
+                </div>
+        
+                <div class="column">
+                    <h3>Address</h3>
+                    <p>Road no 2, behind ikea, Hitec city, Hyderabad</p>
+                    <p>Telangana, India- 500085</p>
+                    <p>91-92312342</p>
+                </div>
             </footer>
         </div>
+        <script>
+            let numerical_value_slider = document.getElementById("slider_value");
+            numerical_value_slider.innerHTML = document.getElementById("donation_slider").value
+            donation_slider.oninput = function() {
+                numerical_value_slider.innerHTML = this.value
+                let package_selector = document.getElementById("slider_package")
+                if(this.value < 30 ) 
+                    package_selector.innerHTML = "Feed a dog!"
+                else if(this.value > 50)
+                    package_selector.innerHTML = "Get your pawmate!"
+                else
+                    package_selector.innerHTML = "Become a furry favourite!"
+            }
+        </script>
     </body>
 </html>

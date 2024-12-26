@@ -13,7 +13,7 @@ nav {
     color:green;
 }
 h1 {
-    color:aqua;
+    color:cadetblue;
 }
 
 .banner {
@@ -47,4 +47,16 @@ h1 {
 
 body {
     margin: 0px;
+}
+
+.title {
+    padding: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
 }
