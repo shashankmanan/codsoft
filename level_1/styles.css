@@ -22,6 +22,7 @@ h1 {
     height: 800px;
     width: 800px;
     padding-left: 20px;
+    
 }
 .banner_box {
     display: flex;
@@ -59,4 +60,12 @@ footer {
     justify-content: space-evenly;
     color: white;
     background-color: black;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    background-color: azure;
+    height:50px;
+    width: 90px;
+    font-size: larger;
 }
