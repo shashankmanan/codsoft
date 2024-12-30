@@ -1,0 +1,23 @@
+.nav-container {
+    background-color: darkcyan;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li {
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+}
