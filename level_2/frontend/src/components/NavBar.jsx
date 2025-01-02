@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/NavBar.css"
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   return (
@@ -19,7 +20,7 @@ export default function NavBar() {
                         <input type="text" placeholder='search'/>
                     </li>
                     <li>
-                        <a href=""><h4>Sign out</h4></a>
+                        <Link to="/login"><h4>Login</h4></Link>
                     </li>
                 </ul>
             </nav>
