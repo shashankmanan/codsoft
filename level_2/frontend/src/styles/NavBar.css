@@ -1,5 +1,6 @@
 .nav-container {
     background-color: darkcyan;
+    padding: 20px;
 }
 
 ul {
@@ -9,9 +10,6 @@ ul {
     justify-content: space-evenly;
     list-style: none;
 }
-li {
-
-}
 
 a {
     text-decoration: none;
@@ -19,5 +17,5 @@ a {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 25px;
 }
